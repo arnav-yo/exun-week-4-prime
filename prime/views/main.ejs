@@ -1,0 +1,10 @@
+<% const factors = [] %> <% for(i = 1 ; i <= num ; i++){%> <% if(num%i === 0){
+%> <% factors.push(i) %> <%} %> <% } %> <% if(Number(num) < 1){%>
+<h1>Please enter positive nuumbers</h1>
+<% } else if(Number(num) === 1){%>
+<h1>1 is a unique number</h1>
+<% } else if(factors.length === 2){ %>
+<h1><%= num %> is a prime number</h1>
+<%} else {%>
+<h1><%= num %> is a composite number</h1>
+<%}%>
